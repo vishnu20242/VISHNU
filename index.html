@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern responsive portfolio website for a fresher / entry-level developer."
+    />
+    <title>Fresher Portfolio</title>
+
+    <!-- ===== Primary Stylesheet ===== -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- ===== Google Fonts (lightweight) ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===================== Page Loader (optional enhancement) ===================== -->
+    <!-- Simple loading symbol shown while page loads -->
+    <div id="page-loader">
+      <div class="loader-circle"></div>
+      <p>Loading portfolio...</p>
+    </div>
+
+    <!-- ===================== Main Wrapper ===================== -->
+    <div class="page-wrapper">
+      <!-- ===================== Header / Navbar ===================== -->
+      <header class="header" id="top">
+        <div class="container header-container">
+          <div class="logo">
+            <!-- You can replace this text with your initials or simple logo image -->
+            <span>FP</span>
+          </div>
+
+          <!-- Navigation links with smooth scroll -->
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#education" class="nav-link">Education</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Right-side header actions -->
+          <div class="header-actions">
+            <!-- Dark / Light mode toggle -->
+            <button
+              class="btn-icon"
+              id="theme-toggle"
+              aria-label="Toggle dark and light mode"
+            >
+              <span class="theme-icon">🌙</span>
+            </button>
+
+            <!-- Mobile nav toggle -->
+            <button
+              class="btn-icon nav-toggle"
+              id="nav-toggle"
+              aria-label="Toggle navigation"
+            >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- ===================== Home / Hero ===================== -->
+      <!-- Section 1: Home / Hero -->
+      <section class="section hero" id="home">
+        <div class="container hero-container">
+          <div class="hero-text">
+            <!-- Replace with your own name and details -->
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Vishnu S</h1>
+            <p class="hero-tagline">Aspiring Frontend Developer · Available for Work</p>
+
+            <p class="hero-description">
+              A passionate fresher eager to build beautiful, responsive websites and learn modern
+              web technolo
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Contact Me</a>
+              <!-- Optional: Resume download button (link to your resume.pdf) -->
+              <a href="assets/resume.pdf" class="btn btn-outline" download>
+                Download Resume
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <!-- Placeholder circular profile image; replace src with your own photo -->
+            <div class="hero-image-border">
+              <img
+                src="https://via.placeholder.com/260x260.png?text=Profile+Photo"
+                alt="Profile photo"
+                class="hero-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== About Me ===================== -->
+      <!-- Section 2: About Me -->
+      <section class="section" id="about">
+        <div class="container section-container">
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">A quick introduction</p>
+          </div>
+
+          <div class="about-content">
+            <!-- 2–3 sentence summary suitable for a fresher -->
+            <p>
+              I am a motivated fresher with a strong interest in web development and user
+              experience. I enjoy turning ideas into clean, responsive interfaces using HTML, CSS,
+              and JavaScript. My goal is to keep learning, contribute to real-world projects, and
+              grow into a skilled frontend developer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Education ===================== -->
+      <!-- Section 3: Education (10th, 12th, UG, PG) -->
+      <section class="section" id="education">
+        <div class="container section-container">
+          <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">My academic journey</p>
+          </div>
+
+          <div class="education-grid">
+            <!-- Duplicate / modify these cards with your own details -->
+            <article class="edu-card">
+              <h3 class="edu-level">10th Standard</h3>
+              <p class="edu-institute">Kongunadu Matric Higher Secondary School</p>
+              <p class="edu-year">Year of Passing: 2019</p>
+              <p class="edu-score">Percentage / CGPA: 9.0 CGPA</p>
+            </article>
+
+            <article class="edu-card">
+              <h3 class="edu-level">12th Standard</h3>
+              <p class="edu-institute">Kongunadu Matric Higher Secondary School</H1> </Main></p>
+              <p class="edu-year">Year of Passing: 2021</p>
+              <p class="edu-score">Percentage: 85%</p>
+            </article>
+
+            <article class="edu-card">
+              <h3 class="edu-level">Undergraduate (UG)</h3>
+              <p class="edu-institude">Kongu College of Arts and Science</p>
+              <p class="edu-institute">BCA</p>
+              <p class="edu-year">Year of Passing: 2024</p>
+              <p class="edu-score">Grade / CGPA: 8.2 CGPA</p>
+            </article>
+
+            <article class="edu-card">
+              <h3 class="edu-level">Postgraduate (PG)</h3>
+              <p class="edu-institude">Gnanamani College of Technology</p>
+              <p class="edu-institute">MCA</p>
+              <p class="edu-year">Year of Passing: 2026</p>
+              <p class="edu-score">Grade / CGPA: 8.5 CGPA</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Skills ===================== -->
+      <!-- Section 4: Skills (with animated bars) -->
+      <section class="section" id="skills">
+        <div class="container section-container">
+          <div class="section-header">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Technologies I am learning</p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill card with animated progress bar -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <h3>HTML</h3>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-skill-percent="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <h3>CSS</h3>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-skill-percent="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <h3>JavaScript</h3>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-skill-percent="60"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <h3>Git &amp; GitHub</h3>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-skill-percent="65"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <h3>Responsive Design</h3>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-skill-percent="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== My Projects ===================== -->
+      <!-- Section 5: Projects (2–5 beginner projects with cards) -->
+      <section class="section" id="projects">
+        <div class="container section-container">
+          <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Some beginner-friendly work</p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <!-- Optional: Replace with actual screenshot -->
+                <img
+                  src="https://via.placeholder.com/480x260.png?text=Project+Screenshot"
+                  alt="Project 1 screenshot"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Responsive Landing Page</h3>
+                <p class="project-description">
+                  A simple landing page built with HTML and CSS, focusing on responsive layout and
+                  clean design.
+                </p>
+                <p class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, Flexbox
+                </p>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-sm" target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                  </a>
+                  <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="https://via.placeholder.com/480x260.png?text=Project+Screenshot"
+                  alt="Project 2 screenshot"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Todo List App</h3>
+                <p class="project-description">
+                  A beginner JavaScript project to add, remove, and filter tasks in a clean
+                  interface.
+                </p>
+                <p class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </p>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-sm" target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                  </a>
+                  <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 3 (optional extra example) -->
+            <article class="project-card">
+              <div class="project-image-wrapper">
+                <img
+                  src="https://via.placeholder.com/480x260.png?text=Project+Screenshot"
+                  alt="Project 3 screenshot"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Portfolio Prototype</h3>
+                <p class="project-description">
+                  A simple single-page portfolio layout showcasing sections like About, Skills, and
+                  Contact.
+                </p>
+                <p class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, Basic JavaScript
+                </p>
+                <div class="project-actions">
+                  <a href="#" class="btn btn-sm" target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                  </a>
+                  <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Contact ===================== -->
+      <!-- Section 6: Contact (email, GitHub, LinkedIn + form) -->
+      <section class="section" id="contact">
+        <div class="container section-container">
+          <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Let’s work together</p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact info links -->
+            <div class="contact-info">
+              <p>
+                Feel free to reach out for opportunities, internships, or collaborations. I am
+                excited to connect and learn from real-world projects.
+              </p>
+
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">Email:</span>
+                  <a href="mailto:youremail@example.com">youremail@example.com</a>
+                </li>
+                <li>
+                  <span class="contact-label">GitHub:</span>
+                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                    github.com/yourusername
+                  </a>
+                </li>
+                <li>
+                  <span class="contact-label">LinkedIn:</span>
+                  <a
+                    href="https://www.linkedin.com/in/yourprofile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    linkedin.com/in/yourprofile
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Simple contact form (front-end only) -->
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <small class="error-message" id="name-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+                <small class="error-message" id="email-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+                <small class="error-message" id="message-error"></small>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Footer ===================== -->
+      <footer class="footer">
+        <div class="container footer-container">
+          <p>
+            &copy; <span id="current-year"></span> Your Name. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ===== Main JavaScript ===== -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
